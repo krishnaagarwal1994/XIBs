@@ -26,15 +26,25 @@ This repository contains some basic python scripts to deal with xib's in iOS.
 ## unused_xibs.py
 This script will simply list down the list of unused xib's in the source file path being passed to the script. 
 
-## Usage
-You need to have python3 installed on your machine.
-Simply execute the below script by passing the path to the source files you need to scan.
+## xib_owners.py
+This script will prepare the XIB's and module mapping. i.e which XIB belong to which target.
 
+## Setup
+You need to have python3 installed on your machine.
+
+## Usage
+unused_xibs.py
 ```
-python3 unused_xibs.py source_file_path
+python3 unused_xibs.py source_files_path
+```
+
+xib_owners.py
+```
+python3 xib_owners.py source_files_path
 ```
 
 ## Sample Output
+unused_xibs.py
 ```
 List of unused XIB's
 ===================
@@ -42,4 +52,11 @@ a.xib
 b.xib
 c.xib
 ```
-
+xib_owners.py
+```
+Total number Xib's in Module {module_name/target_name} = {total xib's count}
+===================================================================
+a.xib
+b.xib
+c.xib
+```
