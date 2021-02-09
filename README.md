@@ -37,14 +37,7 @@ unused_xibs.py
 ```
 python3 unused_xibs.py source_files_path
 ```
-
-xib_owners.py
-```
-python3 xib_owners.py source_files_path
-```
-
-## Sample Output
-unused_xibs.py
+Sample Output -
 ```
 List of unused XIB's
 ===================
@@ -52,7 +45,12 @@ a.xib
 b.xib
 c.xib
 ```
+
 xib_owners.py
+```
+python3 xib_owners.py source_files_path
+```
+Sample Output
 ```
 Total number Xib's in Module {module_name/target_name} = {total xib's count}
 ===================================================================
